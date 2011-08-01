@@ -1,5 +1,5 @@
 # A. Basic Lists
-1. Write a Groovy script that declares a statically initialized list containing data of your choosing. Print it out.
+1. Write a Groovy script that declares a statically initialized list containing data of your choosing. Print out the list.
 2. Experiment with accessing members of the using square bracket indexing.
 3. Create sub-lists by using ranges for indexes. Make sure some of the indexes are negative.
 
@@ -11,7 +11,7 @@
 
 2. Iterate over your list using the each() method, printing out each member.
 3. Convert your list to percentages using the collect() method. Output should resemble this: 14.16%.
-  HINT: printf("%02.02f", number)
+  HINT: sprintf("%02.02f%%", number)
 
 4. Find the average of all the random numbers without writing a loop
 5. In one line of code, find the count of all the list items greater than some customizable threshold

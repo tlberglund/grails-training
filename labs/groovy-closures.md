@@ -13,4 +13,4 @@
 4. Create an instance of ClosureDelegate, then set the closure's delegate to that object.
 5. Run the script again. It should work now.
 6. Create methods in the script (outside of any class) with the same name as the methods in ClosureDelegate. Make sure these methods print a different message than the methods in ClosureDelegate.
-7. Experiment with setting the resolveStrategy property on your closure to Closure.DELEGATE_FIRST and Closure.DELEGATE_ONLY and see what happens.
+7. Experiment with setting the resolveStrategy property on your closure to Closure.DELEGATE\_FIRST and Closure.DELEGATE\_ONLY and see what happens.
