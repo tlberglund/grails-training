@@ -14,4 +14,4 @@
 2. Implement a methodMissing method that prints the name and arguments of the invoked method.
 3. If the method name ends with Monkey, permanently add a method to the metaClass that prints the name of the method followed by a few exclamation points.
   HINT: name.endsWith("Monkey")
-5. EXTRA CREDIT: put some debug code in methodMissing and in your dynamically created methods to indicate when they are called. Call the unleashMonkey() method several times. Observe the debug output.
+4. EXTRA CREDIT: put some debug code in methodMissing and in your dynamically created methods to indicate when they are called. Call the unleashMonkey() method several times. Observe the debug output.
