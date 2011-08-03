@@ -10,9 +10,9 @@
 1. Create a new action in `IssueController` called `filtered_issues`.
 2. The action should process two request parameters: `severity` and `userId`. NOTE: your `Issue` schema needs to support both of these fields.
 3. Perform a dynamic finder query on the `Issue` class to find all records matching that severity and UserId.
-  HINT: Issue.findBySeverityAndUserId() is not correct.
+  HINT: Issue.findAllBySeverityAndUserId() is not correct.
   HINT: User.get() may help.
-4. Render a partial template containing only those issues returned by the query.
+4. Render a list of issues containing only the results of the filtered query.
 5. Rewrite the query to use the `Issue.where()` syntax.
 6. EXTRA CREDIT: render the output as JSON using render(contentType: 'text/json') { ... }
 
@@ -25,11 +25,10 @@
 5. Since this action modifies the state of the application, make sure it is only accessible through the POST verb.
 6. Verify that you can't access the action with a GET
 7. Put a button in the `views/issues/show.gsp` view to mark an issue as resolved. This form code may help:
-    <g:form>
-      <g:hiddenField name="id" value="${issueInstance?.id}" />
-      <span class="button"><g:actionSubmit class="edit" action="edit" value="${message(code: 'default.button.edit.label', default: 'Edit')}" /></span>
-      <span class="button"><g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" /></span>
-    </g:form>
+            <g:form action='resolve' method='post'>
+              <g:hiddenField name="id" value="${issueInstance?.id}" />
+              <g:submitButton name="resolve" value="Resolve Issue" />
+            </g:form>
 8. EXTRA CREDIT: modify the `list` action in the `issue` controller to show only active issues.
 
 
