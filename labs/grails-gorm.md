@@ -13,7 +13,7 @@
   HINT: Issue.findAllBySeverityAndUserId() is not correct.
   HINT: User.get() may help.
 4. Render a list of issues containing only the results of the filtered query.
-5. Rewrite the query to use the `Issue.where()` syntax.
+5. Rewrite the query to use the `Issue.findWhere()` syntax.
 6. EXTRA CREDIT: render the output as JSON using render(contentType: 'text/json') { ... }
 
 # C. Adding to Collections (and using HTTP verbs)
