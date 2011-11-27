@@ -1,0 +1,83 @@
+= Grails
+
+== Overview
+
+In this video training session, you will receive a thorough introduction to the Grails web framework. We will begin with an overview of some important features of the Groovy language, including how its syntax differs from Java, how Strings are handled, how collections are improved from Java, how simple metaprogramming works, and the basics of Grooy closures. We will then discuss the history of Grails, the technologies from which it emerged, and why it is important that Grails is a full-stack web framework.
+
+In the remainder of the class, we will develop a sample application together, reviewing each important area of Grails functionality. We'll look at basic domain modeling with GORM, then explore database configuration through the Grails configuration files. We'll look at static and dynamic scaffolding, convention-over-configuration web request mapping, and the Groovy Server Page (GSP) view layer. We'll write a service class, look at the library of custom GSP tags, and write a tag of our own. Finally we'll explore the plugin ecosystem and even install a plugin to use in our application. Each step of the way, we'll add a little bit more application functionality.
+
+This content is useful to developers and architects who are investigating Grails, planning to adopt it in the near future, or who have already adopted Grails and are looking to solidify their skills.
+
+== Outline
+
+. Introduction
+
+. Groovy
+.. Similarities and differences with Java
+.. Strings
+.. Collections
+.. Closures
+.. Metaprogramming
+.. The Groovy JDK
+
+. Creating an application
+.. The full-stack philosophy
+.. Grails project structure
+
+. Simple domain modeling
+.. Creating a domain class
+.. Domain class properties
+.. Constraints
+
+. Controllers and Scaffolding
+.. Dynamic Scaffolding
+.. Static scaffolding
+
+. Grails configuration files
+.. DataConfig.groovy
+.. Config.groovy
+.. BuildConfig.groovy
+.. Switching from H2 to MySQL
+
+. Domain Relationships
+.. One-to-Many
+.. Many-to-One
+.. Many-to-Many
+
+. Groovy Server Pages
+.. Views
+.. Layouts
+.. Templates
+.. Customizing the scaffolding
+
+. Services
+.. Philosophy and purpose
+.. Transactionality
+.. Autowiring
+
+. The GSP tag library
+.. A review of the available tags
+.. Customizing the scaffolding with AJAX
+... Controller modification
+... GSP templates
+... GSP AJAX tags
+... Adapt service layer to suite
+... Explore GORM API further
+
+. Custom GSP Tags
+.. Creating a custom tag
+.. Emitting body content
+.. Taking attributes
+.. Processing body content
+.. Changing the prefix
+
+. Plugins
+.. The plugin architecture
+... Mini Grails apps
+... Metaprogramming Grails
+.. Exploring the ecosystem
+.. Installing a plugin
+... Spring Security
+... CloudFoundry
+
+. Conclusion

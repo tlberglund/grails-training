@@ -1,0 +1,93 @@
+= Grails in Three Days
+
+== Overview
+
+In this class, you will receive a thorough introduction to the Grails web framework. We will begin with its history and a discussion of why it is important that Grails is a full-stack web framework. Throughout the class, we will develop a sample application together, reviewing each important area of Grails functionality. We'll look at basic domain modeling with GORM, then explore database configuration through the Grails configuration files. We'll look at static and dynamic scaffolding, convention-over-configuration web request mapping, and the Groovy Server Page (GSP) view layer. We'll explore the GORM API in more detail, including dynamic finders and the criteria builder. We'll write a service class, look at the library of custom GSP tags, and write a tag of our own. Finally we'll explore the plugin ecosystem and even install a plugin to use in our application. We'll build up our sample application as we explore the framework.
+
+== Target Student
+
+This content is useful to developers and architects who are investigating Grails, planning to adopt it in the near future, or who have already adopted Grails and are looking to solidify their skills. Most Grails adopters are already using Java to build browser-based applications that access a relational database.
+ 
+== Prerequisites
+
+Students should be Java developers who are familiar with the Groovy programming language. Substantial Groovy experience is not necessary, but knowledge of basic Groovy syntax and constructs like collections and closures is required. Experience with relational databases and Java web development is also required. Knowledge of the Spring framework and Hibernate are helpful.
+
+== Outline
+
+. Introduction
+
+. Creating an application
+.. The full-stack philosophy
+.. Grails project structure
+
+. Simple domain modeling
+.. Creating a domain class
+.. Domain class properties
+.. Constraints
+
+. Controllers and Scaffolding
+.. Dynamic Scaffolding
+.. Static scaffolding
+
+. Grails configuration files
+.. DataConfig.groovy
+.. Config.groovy
+.. BuildConfig.groovy
+.. Switching from H2 to MySQL
+
+. GORM Mapping
+.. Observing the mapping conventions
+.. Overriding the mapping conventions
+
+. Domain Relationships
+.. One-to-Many
+.. Many-to-One
+.. Many-to-Many
+.. Customizing the fetch mode
+
+. Groovy Server Pages
+.. Views
+.. Layouts
+.. Templates
+.. Customizing the scaffolding
+
+. The GORM API
+.. Dynamic finders
+.. Paged queries
+.. Validation
+.. Transient fields
+.. Modifying collections
+.. Programmatic transactional demarcation
+.. Criteria queries
+
+. Services
+.. Philosophy and purpose
+.. Transactionality
+.. Autowiring
+
+. The GSP tag library
+.. A review of the available tags
+.. Customizing the scaffolding with AJAX
+... Controller modification
+... GSP templates
+... GSP AJAX tags
+... Adapt service layer to suite
+... Explore GORM API further
+
+. Custom GSP Tags
+.. Creating a custom tag
+.. Emitting body content
+.. Taking attributes
+.. Processing body content
+.. Changing the prefix
+
+. Plugins
+.. The plugin architecture
+... Mini Grails apps
+... Metaprogramming Grails
+.. Exploring the ecosystem
+.. Installing a plugin
+... Spring Security
+... CloudFoundry
+
+. Conclusion
